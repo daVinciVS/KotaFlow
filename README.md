@@ -52,20 +52,22 @@ KotaFlow provides a self-contained analytical workflow to identify these pattern
 
 ---
 
-KotaFlow/
-├── data/
-│ └── kotaflow_rides.csv # Simulated dataset (18,000 rides, 3 cities)
-├── notebooks/
-│ └── kotaflow_analysis.ipynb # Main analysis notebook
-├── outputs/
-│ ├── heatmaps/ # Folium HTML heatmaps per city
-│ └── charts/ # PNG chart exports
-├── src/
-│ ├── _init_.py
-│ └── utils.py # Shared helper functions
-├── generate_data.py # Dataset generation script
-├── requirements.txt
-└── .gitignore
+## Folder Structure
+
+    KotaFlow/
+    ├── data/
+    │   └── kotaflow_rides.csv
+    ├── notebooks/
+    │   └── kotaflow_analysis.ipynb
+    ├── outputs/
+    │   ├── heatmaps/
+    │   └── charts/
+    ├── src/
+    │   ├── __init__.py
+    │   └── utils.py
+    ├── generate_data.py
+    ├── requirements.txt
+    └── .gitignore
 
 ---
 
