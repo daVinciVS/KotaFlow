@@ -1,3 +1,57 @@
+# KotaFlow
+
+A ride-hailing demand heatmap and insights analyzer focused on three Indonesian cities: Jakarta, Yogyakarta, and Surabaya. Built to replicate the kind of operational analytics a city operations team would run to understand demand patterns, peak hours, and supply gaps.
+
+---
+
+## Business Context
+
+Ride-hailing platforms operating in Indonesia face a core operational challenge: demand is highly uneven across time and geography. Morning and evening commute spikes, weekend tourism surges, and weather-driven demand jumps all create windows where supply falls short and wait times spike.
+
+KotaFlow provides a self-contained analytical workflow to identify these patterns using interactive heatmaps, time-series visualizations, and a structured internal report — all runnable locally with no deployment required.
+
+---
+
+## Key Findings
+
+| Finding | Detail |
+|---------|--------|
+| Bi-modal peaks | Morning 07–09 and evening 17–20 account for 60–70% of daily volume across all cities |
+| Weekend midday shift | Demand moves to 10–14 on weekends; Yogyakarta shows +30% uplift driven by tourism |
+| Rain premium | Rainy conditions increase demand 20–35%; Jakarta is most weather-sensitive |
+| Worst supply gap | 08:00 and 18:00 show the largest unmet demand; Surabaya industrial zones most affected |
+| City scale difference | Jakarta average demand is 2.6x Yogyakarta and 1.4x Surabaya |
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python 3.10+ | Core language |
+| Pandas / NumPy | Data manipulation and simulation |
+| Folium | Interactive demand heatmaps |
+| Matplotlib / Seaborn | Static charts and EDA visualizations |
+| Jupyter Notebook | Interactive analysis environment |
+
+---
+
+## Folder Structure
+
+KotaFlow/
+├── data/
+│ └── kotaflow_rides.csv # Simulated dataset (18,000 rides, 3 cities)
+├── notebooks/
+│ └── kotaflow_analysis.ipynb # Main analysis notebook
+├── outputs/
+│ ├── heatmaps/ # Folium HTML heatmaps per city
+│ └── charts/ # PNG chart exports
+├── src/
+│ ├── _init_.py
+│ └── utils.py # Shared helper functions
+├── generate_data.py # Dataset generation script
+├── requirements.txt
+└── .gitignore
 
 ---
 
