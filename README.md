@@ -12,6 +12,22 @@ KotaFlow provides a self-contained analytical workflow to identify these pattern
 
 ---
 
+## Preview
+
+**Demand Distribution by City**
+![Demand Distribution](outputs/charts/demand_distribution.png)
+
+**Peak Hour Analysis**
+![Peak Hour Analysis](outputs/charts/peak_hour_analysis.png)
+
+**Day of Week x Hour Heatmap**
+![DOW Heatmap](outputs/charts/heatmap_dow_hour.png)
+
+**Supply vs Demand Gap**
+![Supply Demand Gap](outputs/charts/supply_demand_gap.png)
+
+---
+
 ## Key Findings
 
 | Finding | Detail |
@@ -35,8 +51,6 @@ KotaFlow provides a self-contained analytical workflow to identify these pattern
 | Jupyter Notebook | Interactive analysis environment |
 
 ---
-
-## Folder Structure
 
 KotaFlow/
 ├── data/
@@ -108,3 +122,5 @@ This project uses a simulated dataset generated with realistic statistical patte
 ## License
 
 MIT License
+
+## Folder Structure
